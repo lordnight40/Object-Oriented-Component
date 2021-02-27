@@ -1,6 +1,9 @@
 ﻿.board {
     width: 20vw;
+    min-width: 20vw;
+    margin-right: 2vw;
     background: lightskyblue;
+    flex-wrap: nowrap;
 }
 
 .board-title {
@@ -8,4 +11,15 @@
     text-align: center;
     padding: 10px 0;
     border-bottom: 2px dotted rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+}
+
+.board-list-item {
+    padding: 1vh 1vw;
+    background: pink;
+}
+
+.item-creator {
+    text-align: right;
+    font-weight: 300;
 }

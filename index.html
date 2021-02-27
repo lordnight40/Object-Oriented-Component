@@ -3,16 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>OOP Component</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/components/board.css">
 </head>
 <body>
 <div id="root-frame">
-    <div class="board">
-        <div class="board-title">Заголовок доски</div>
-        <div class="board-content">
-        </div>
+<!--    <div class="board">-->
+<!--        <div class="board-title">Заголовок доски</div>-->
+<!--        <div class="board-content">-->
+<!--            <div class="board-list-item">-->
+<!--                <div class="item-text">Егор пидор</div>-->
+<!--                <div class="item-creator">Отец Кирилл</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+</div>
+<div id="add-button"></div>
+<div class="overlay hidden">
+    <div class="content-box absolute-center">
+        <form id="new-board-form">
+            <label for="input">Имя доски</label>
+            <input type="text" class="board-name-input" id="input" required />
+            <button type="submit">Создать</button>
+        </form>
     </div>
 </div>
+<script src="js/component/board.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
