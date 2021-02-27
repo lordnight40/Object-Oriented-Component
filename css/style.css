@@ -5,13 +5,72 @@
 
 html {
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #root-frame {
     display: flex;
     height: 100vh;
     padding: 1vw;
-    background: lightgray;
     box-sizing: border-box;
+    background: lightgray;
+}
+
+#add-button {
+    width: 3vw;
+    height: 3vw;
+    background: deeppink;
+    position: absolute;
+    top: 90vh;
+    left: 90vw;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+#add-button::after {
+    content: '+';
+    font-size: 50px;
+    font-weight: 300;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.absolute-center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-box {
+    position: absolute;
+    background: white;
+    padding: 5vw;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+input[type="text"] {
+    padding: 6px;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
 }
